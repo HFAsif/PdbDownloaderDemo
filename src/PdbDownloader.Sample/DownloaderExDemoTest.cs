@@ -13,7 +13,6 @@ partial class DownloaderExDemoTest
 {
     public required Enm.DownloadType downloadType;
     public required IList<DownloadItem> downloadItems;
-    private bool disposedValue;
 
     public async Task Run()
     {
