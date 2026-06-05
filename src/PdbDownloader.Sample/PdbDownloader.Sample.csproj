@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <BaseOutputPath>$(SolutionDir)bin</BaseOutputPath>
+	  <!--<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+	  <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HFDownloaderNetEx.Demo" Version="1.0.26" />
+  </ItemGroup>
+	
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+		<NoStdLib>true</NoStdLib>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+		<PackageReference Include="MSCorlibFourEx" Version="1.0.3" />
+	</ItemGroup>
+</Project>

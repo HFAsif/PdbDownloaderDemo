@@ -1,0 +1,4 @@
+vs cmd
+cd dotnet\sdk
+.\artifacts\sdk-build-env.bat
+devenv JITLoaderEx.Dotnet11.slnx
