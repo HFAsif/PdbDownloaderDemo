@@ -4,8 +4,6 @@
 	  <OutputType>Exe</OutputType>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	  <BaseOutputPath>$(SolutionDir)bin</BaseOutputPath>
-	  <!--<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
-	  <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>-->
   </PropertyGroup>
 	
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net40' OR '$(TargetFramework)' == 'net20'">
