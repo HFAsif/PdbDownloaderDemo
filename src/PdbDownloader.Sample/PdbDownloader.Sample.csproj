@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <OutputType>Exe</OutputType>
@@ -7,16 +7,15 @@
 	  <!--<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
 	  <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>-->
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="HFDownloaderNetEx.Demo" Version="1.0.26" />
-  </ItemGroup>
 	
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net40' OR '$(TargetFramework)' == 'net20'">
 		<NoStdLib>true</NoStdLib>
+		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+		<CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net40'">
-		<PackageReference Include="MSCorlibFourEx" Version="1.0.3" />
+	<ItemGroup>
+		<PackageReference Include="HFDownloaderNetEx.Demo2" Version="2.0.0" />
 	</ItemGroup>
+
 </Project>
