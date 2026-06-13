@@ -5,7 +5,7 @@
 		<PdbDownloaderSampleDotnet10 Condition=" '$(SolutionName)' == 'PdbDownloader.Dotnet10' ">true</PdbDownloaderSampleDotnet10>
 		<TargetFrameworks Condition=" '$(PdbDownloaderSampleDotnet10)' == 'true' ">$(TargetFrameworks);net10.0-windows</TargetFrameworks>
 		<TargetFrameworks Condition=" '$(PdbDownloaderSampleDotnet10)' != 'true' ">$(TargetFrameworks);net11.0-windows</TargetFrameworks>
-		<TargetFrameworks>$(TargetFrameworks);net35;net40</TargetFrameworks>
+		<TargetFrameworks>$(TargetFrameworks);net35;net20;net45;net48</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<Platforms>AnyCPU;x86;x64</Platforms>
 		<LangVersion>14.0</LangVersion>
