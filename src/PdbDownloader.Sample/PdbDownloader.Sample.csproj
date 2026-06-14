@@ -13,7 +13,7 @@
 </PropertyGroup>-->
 
 <ItemGroup>
-	<PackageReference Include="HFDownloaderNetEx.Demo2" Version="2.0.4" />
+	<PackageReference Include="HFDownloaderNetEx.Demo2" Version="2.0.11" />
 </ItemGroup>
 
 </Project>
